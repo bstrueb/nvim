@@ -22,7 +22,7 @@ return {
     dashboard.section.buttons.val = {
       dashboard.button("n", "  New File", "<cmd>ene<CR>"),
       dashboard.button("e", "  Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
-      dashboard.button("f", "󰱼  Find File", "y<cmd>Telescope find_files<CR>"),
+      dashboard.button("f", "󰱼  Find File", "<cmd>Telescope find_files<CR>"),
       dashboard.button("w", "  Find Word", "<cmd>Telescope live_grep<CR>"),
       dashboard.button("l", "󰒲  Lazy", "<cmd>Lazy<CR>"),
       dashboard.button(
@@ -30,6 +30,7 @@ return {
         "  Config",
         "<cmd> lua require('telescope.builtin').find_files( { cwd = vim.fn.fnamemodify(vim.env.MYVIMRC, ':h') }) <CR>"
       ),
+      dashboard.button("h", "󰻹  Check Health", "<cmd>checkhealth<CR>"),
       dashboard.button("q", "  Quit NVIM", "<cmd>qa<CR>"),
     }
 

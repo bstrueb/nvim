@@ -43,7 +43,5 @@ keymap.set("v", "<A-up>", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
 
 keymap.set("n", "<c-s>", "<cmd>w<CR>", { desc = "Save file" })
 
-keymap.set("n", "<leader>l", "<cmd>Lazy<CR>", { desc = "Lazy" })
-
 keymap.set("n", "=", "<cmd>vertical resize -10<CR>", { desc = "Increase window size" })
 keymap.set("n", "-", "<cmd>vertical resize +10<CR>", { desc = "Decrease window size" })
